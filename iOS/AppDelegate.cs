@@ -23,9 +23,7 @@ namespace Bemyguide.iOS
 
 			return base.FinishedLaunching (app, options);
 		}
-
-        [assembly: Dependency(typeof(SQLite_iOS))]
-        // ...
+			
         public class SQLite_iOS : ISQLite
         {
             public SQLite_iOS() { }

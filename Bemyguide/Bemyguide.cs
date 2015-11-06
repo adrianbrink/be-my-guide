@@ -1,7 +1,6 @@
-﻿using SQLite;
-using System;
-
+﻿using System;
 using Xamarin.Forms;
+using SQLite.Net;
 
 namespace Bemyguide
 {
@@ -23,6 +22,7 @@ namespace Bemyguide
 					}
 				}
 			};
+			AppDatabase ();
 		}
 
 		protected override void OnStart ()
@@ -48,7 +48,7 @@ namespace Bemyguide
         public void AppDatabase()
         {
             database = DependencyService.Get<ISQLite>().GetConnection();
-            database.CreateTable<users>();
+            //database.CreateTable<users>();
         }
 	}
 }
