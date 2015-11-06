@@ -1,5 +1,6 @@
 ﻿using System;
-
+using SQLite.Net;
+using System.IO;
 namespace Bemyguide
 {
 	public class SQLite_iOS : ISQLite
