@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 
 using Xamarin.Forms;
 
@@ -6,7 +7,9 @@ namespace Bemyguide
 {
 	public class App : Application
 	{
-		public App ()
+        private SQLiteConnection database;
+
+        public App ()
 		{
 			// The root page of your application
 			MainPage = new ContentPage {
@@ -36,6 +39,17 @@ namespace Bemyguide
 		{
 			// Handle when your app resumes
 		}
+
+        public interface ISQLite
+        {
+            SQLiteConnection GetConnection();
+        }
+
+        public void AppDatabase()
+        {
+            database = DependencyService.Get<ISQLite>().GetConnection();
+            database.CreateTable<users>();
+        }
 	}
 }
 
