@@ -19,9 +19,13 @@ namespace Bemyguide.iOS
 			Xamarin.Calabash.Start();
 			#endif
 
-			LoadApplication (new App ());
+			window = new UIWindow (UIScreen.MainScreen.Bounds);
 
-			return base.FinishedLaunching (app, options);
+			window.RootViewController = App.getMainPage ().CreateViewController();
+			window.MakeKeyAndVisible ();
+
+			return true;
+
 		}
 			
         public class SQLite_iOS : ISQLite
