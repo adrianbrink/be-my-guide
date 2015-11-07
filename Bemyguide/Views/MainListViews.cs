@@ -32,6 +32,7 @@ namespace Bemyguide
 				// ...etc.,...
 				new Person("Yvonne", new DateTime(1987, 1, 10), Color.Black, "80"),
 				new Person("Zachary", new DateTime(1988, 2, 5), Color.Black, "34")
+
 			};
 
 
@@ -47,7 +48,7 @@ namespace Bemyguide
 				//      each item; it must return a Cell derivative.)
 				ItemTemplate = new DataTemplate(() =>
 					{
-						
+
 						BackgroundColor = Color.Black;
 						// Create views with bindings for displaying each property.
 						Label nameLabel = new Label(){TextColor = Color.White,FontSize = 20, HorizontalOptions = LayoutOptions.CenterAndExpand};
@@ -89,8 +90,6 @@ namespace Bemyguide
 				this.Navigation.PushAsync(new RunnerProfile());
 
 			};
-		
-
 
 			// Build the page.
 			this.Content = new StackLayout

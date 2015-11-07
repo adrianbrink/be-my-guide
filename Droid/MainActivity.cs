@@ -21,7 +21,7 @@ namespace Bemyguide.Droid
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
-			LoadApplication (new App ());
+			SetPage (App.getMainPage ());
 		}      
     }
 

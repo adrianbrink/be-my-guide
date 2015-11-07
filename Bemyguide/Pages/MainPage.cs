@@ -32,7 +32,8 @@ namespace Bemyguide
 							new Button () {
 								Text = "Register",
 								TextColor = Color.White,
-								FontSize = 22
+								FontSize = 22,
+								Command = new Command (() => this.Navigation.PushAsync(new GuidePagView()))
 
 							},
 							new Button () {
