@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace Bemyguide
 {
-	public class GuidePagView : ContentPage
+	public class GuidePageView : ContentPage
 	{
-		public GuidePagView ()
+		public GuidePageView ()
 		{
 			this.BackgroundColor = Color.Black;
 
@@ -23,6 +23,7 @@ namespace Bemyguide
 			browser.Source = htmlSource;
 			browser.HeightRequest = 215.0;
 			browser.WidthRequest = 320.0;
+
 
 			layout.Children.Add (browser);
 
