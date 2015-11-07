@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace Bemyguide
 {
-	public class GuidePagView : ContentPage
+	public class GuidePageView : ContentPage
 	{
-		public GuidePagView ()
+		public GuidePageView ()
 		{
 			this.BackgroundColor = Color.Black;
 
@@ -22,7 +22,6 @@ namespace Bemyguide
 			htmlSource.Html = @"<iframe width=""560"" height=""315"" src=""https://www.youtube.com/embed/Y7bxlR-MxxM"" frameborder=""0"" allowfullscreen></iframe>";
 			browser.Source = htmlSource;
 			browser.HeightRequest = 315.0;
-			browser.WidthRequest = 560.0;
 
 			layout.Children.Add (browser);
 
