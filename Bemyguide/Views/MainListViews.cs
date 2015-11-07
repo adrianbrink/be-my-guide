@@ -15,7 +15,7 @@ namespace Bemyguide
 				this.Age = age;
 			}
 
-			public string Name { private set; get; }
+			public string Naame { private set; get; }
 			public string Age { private set; get; }
 
 			public DateTime Birthday { private set; get; }
