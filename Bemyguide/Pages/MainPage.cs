@@ -40,7 +40,7 @@ namespace Bemyguide
 								Text = "Login",
 								TextColor = Color.White,
 								FontSize = 22,
-								Command = new Command (() => this.Navigation.PushAsync(new MainListViews())) 
+								//Command = new Command (() => this.Navigation.PushAsync(new MainListViews())) 
 
 							}
 

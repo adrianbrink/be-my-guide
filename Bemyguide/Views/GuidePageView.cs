@@ -26,7 +26,10 @@ namespace Bemyguide
 
 
 			layout.Children.Add (browser);
-
+			layout.Children.Add (
+				new Button () {Text = "I'm ready to start",
+					Command = new Command (() => this.Navigation.PushAsync (new MainListViews ()))
+				});
 			this.Content = layout;
 		}
 	}
