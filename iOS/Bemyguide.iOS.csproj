@@ -110,6 +110,7 @@
     <BundleResource Include="Resources\matches_icon2.png" />
     <BundleResource Include="Resources\runner_icon2.png" />
     <BundleResource Include="Resources\settings_icon2.png" />
+    <BundleResource Include="Resources\screen_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

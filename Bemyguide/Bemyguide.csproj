@@ -65,4 +65,11 @@
     <Folder Include="Pages\" />
     <Folder Include="Views\" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="guide_icon2.png" />
+    <EmbeddedResource Include="matches_icon2.png" />
+    <EmbeddedResource Include="runner_icon2.png" />
+    <EmbeddedResource Include="screen_icon.png" />
+    <EmbeddedResource Include="settings_icon2.png" />
+  </ItemGroup>
 </Project>

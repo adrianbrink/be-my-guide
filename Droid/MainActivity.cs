@@ -19,6 +19,9 @@ namespace Bemyguide.Droid
 		{
 			base.OnCreate (bundle);
 
+			App.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density); // device independent pixels
+			App.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density); // device independent pixels
+
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
 			SetPage (App.getMainPage ());

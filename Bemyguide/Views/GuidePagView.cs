@@ -19,10 +19,10 @@ namespace Bemyguide
 
 			var browser = new WebView ();
 			var htmlSource = new HtmlWebViewSource ();
-			htmlSource.Html = @"<iframe width=""560"" height=""315"" src=""https://www.youtube.com/embed/Y7bxlR-MxxM"" frameborder=""0"" allowfullscreen></iframe>";
+			htmlSource.Html = @"<iframe width=""300"" height=""200"" src=""https://www.youtube.com/embed/Y7bxlR-MxxM"" frameborder=""0"" allowfullscreen></iframe>";
 			browser.Source = htmlSource;
-			browser.HeightRequest = 315.0;
-			browser.WidthRequest = 560.0;
+			browser.HeightRequest = 215.0;
+			browser.WidthRequest = 320.0;
 
 			layout.Children.Add (browser);
 
