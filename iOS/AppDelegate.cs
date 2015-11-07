@@ -17,6 +17,8 @@ namespace Bemyguide.iOS
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
+			App.ScreenWidth = (int)UIScreen.MainScreen.Bounds.Width;
+			App.ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
 			global::Xamarin.Forms.Forms.Init ();
 
 			// Code for starting up the Xamarin Test Cloud Agent

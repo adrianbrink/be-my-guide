@@ -7,8 +7,9 @@ namespace Bemyguide
 	public class App : Application
 	{
         private SQLiteConnection database;
-
-        public App ()
+		public static int ScreenWidth;
+		public static int ScreenHeight;
+		public  App ()
 		{
 			
 

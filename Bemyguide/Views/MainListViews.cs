@@ -27,26 +27,27 @@ namespace Bemyguide
 			// Define some data.
 			List<Person> people = new List<Person>
 			{
-				new Person("Abigail", new DateTime(1975, 1, 15), Color.Aqua, "21"),
+				new Person("Abigail", new DateTime(1975, 1, 15), Color.Black, "21"),
 				new Person("Bob", new DateTime(1976, 2, 20), Color.Black, "23"),
 				// ...etc.,...
-				new Person("Yvonne", new DateTime(1987, 1, 10), Color.Purple, "80"),
-				new Person("Zachary", new DateTime(1988, 2, 5), Color.Red, "34")
+				new Person("Yvonne", new DateTime(1987, 1, 10), Color.Black, "80"),
+				new Person("Zachary", new DateTime(1988, 2, 5), Color.Black, "34")
 			};
 
 
 			ListView listView = new ListView
 			{
-
+				
 				// Source of data items.
 				ItemsSource = people,
 				BackgroundColor = Color.Black,
+				
 				// Define template for displaying each item.
 				// (Argument of DataTemplate constructor is called for 
 				//      each item; it must return a Cell derivative.)
 				ItemTemplate = new DataTemplate(() =>
 					{
-
+						
 						BackgroundColor = Color.Black;
 						// Create views with bindings for displaying each property.
 						Label nameLabel = new Label(){TextColor = Color.White,FontSize = 20, HorizontalOptions = LayoutOptions.CenterAndExpand};
@@ -62,9 +63,12 @@ namespace Bemyguide
 
 						return new ViewCell
 						{
+
 							View = new StackLayout
 							{
-								Padding = new Thickness(0, 5),
+								
+								HeightRequest = 70,
+								Padding = new Thickness(20,5),
 								Orientation = StackOrientation.Horizontal,
 								Children = 
 								{
@@ -80,12 +84,21 @@ namespace Bemyguide
 			// Accomodate iPhone status bar.
 			this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
 
+			listView.ItemTapped += async (sender, e) => {
+				
+				this.Navigation.PushAsync(new RunnerProfile());
+
+			};
+		
+
+
 			// Build the page.
 			this.Content = new StackLayout
 			{
 				Children = 
 				{
-					listView
+					listView,
+					new Footer()
 				}
 				};
 		}
