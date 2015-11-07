@@ -24,6 +24,7 @@ namespace Bemyguide
 		//0-3;3-5;5-7;7-10;10+;
 		public int Distance{get;set;}
 		public bool blind{get;set;}
+		public string city{ get; set; }
 
 		public People()
 		{
@@ -43,6 +44,7 @@ namespace Bemyguide
 			this.Pace = usr.Pace;
 			this.Distance = usr.Distance;
 			this.blind = usr.blind;
+			this.city = usr.city;
 		}
 		public People (string userName, string Password)
 		{			

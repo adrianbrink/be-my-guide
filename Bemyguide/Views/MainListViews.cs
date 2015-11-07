@@ -5,34 +5,11 @@ namespace Bemyguide
 {
 	public class MainListViews : ContentPage
 	{
-		class Person
-		{
-			public Person(string name, DateTime birthday, Color favoriteColor, String age)
-			{
-				this.Name = name;
-				this.Birthday = birthday;
-				this.FavoriteColor = favoriteColor;
-				this.Age = age;
-			}
-
-			public string Naame { private set; get; }
-			public string Age { private set; get; }
-
-			public DateTime Birthday { private set; get; }
-
-			public Color FavoriteColor { private set; get; }
-		};
 		public MainListViews ()
 		{
+			People mainGuy = People.GetByUserName (App.userName);
 			// Define some data.
-			List<Person> people = new List<Person>
-			{
-				new Person("Abigail", new DateTime(1975, 1, 15), Color.Aqua, "21"),
-				new Person("Bob", new DateTime(1976, 2, 20), Color.Black, "23"),
-				// ...etc.,...
-				new Person("Yvonne", new DateTime(1987, 1, 10), Color.Purple, "80"),
-				new Person("Zachary", new DateTime(1988, 2, 5), Color.Red, "34")
-			};
+			List<People> people = mainGuy.Matches();
 
 
 			ListView listView = new ListView

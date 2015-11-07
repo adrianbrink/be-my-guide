@@ -8,7 +8,11 @@ namespace Bemyguide
 {
 	public class App : Application
 	{
-        public App ()
+		public static int ScreenWidth;
+		public static int ScreenHeight;
+		public static string userName = "";
+		public  App ()
+
 		{
 			
 
@@ -21,9 +25,9 @@ namespace Bemyguide
 			People guy = new People ("John", "John");
 			People gal = new People ("Jill", "Jill");
 			People thirdGuy = new People ("Peter", "Peter");
-			guy = People.GetByUserName (_connection,"John");
-			gal =  People.GetByUserName (_connection,"Jill");
-			thirdGuy =  People.GetByUserName (_connection,"Peter");
+			guy = People.GetByUserName ("John");
+			gal =  People.GetByUserName ("Jill");
+			thirdGuy =  People.GetByUserName ("Peter");
 			People fourth = new People ("Dean", "Dean");
 			guy.Name = "Paul";
 			guy.zipCode = 2100;
@@ -94,6 +98,8 @@ namespace Bemyguide
 		public int Distance { get; set; }
 		[Column("blind")]
 		public bool blind { get; set; }
+		[Column("City")]
+		public string city{ get; set; }
 
 		public Users(){
 		}
@@ -110,6 +116,7 @@ namespace Bemyguide
 			this.Pace = person.Pace;
 			this.Distance = person.Distance;
 			this.blind = person.blind;
+			this.city = person.city;
 		}
 		public void update(People person)
 		{
@@ -126,6 +133,7 @@ namespace Bemyguide
 			this.Pace = person.Pace;
 			this.Distance = person.Distance;
 			this.blind = person.blind;
+			this.city = person.city;
 		}
 	}
 }

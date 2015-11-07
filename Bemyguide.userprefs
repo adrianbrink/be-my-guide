@@ -1,17 +1,12 @@
 ﻿<Properties StartupItem="Droid\Bemyguide.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Bemyguide\Bemyguide.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bemyguide\Views\SettingsView.cs">
     <Files>
-      <File FileName="Bemyguide\Bemyguide.cs" Line="20" Column="60" />
-      <File FileName="Droid\MainActivity.cs" Line="24" Column="17" />
-      <File FileName="iOS\Main.cs" Line="1" Column="1" />
-      <File FileName="iOS\AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Droid\SQLite_Android.cs" Line="1" Column="1" />
-      <File FileName="Bemyguide\People.cs" Line="1" Column="1" />
-      <File FileName="Bemyguide\Database.cs" Line="1" Column="1" />
-      <File FileName="iOS\SQLite_iOS.cs" Line="1" Column="1" />
-      <File FileName="Bemyguide\SQLite.cs" Line="1" Column="1" />
-      <File FileName="Droid\ISQlite.cs" Line="11" Column="15" />
+      <File FileName="Bemyguide\Bemyguide.cs" Line="135" Column="28" />
+      <File FileName="Bemyguide\People.cs" Line="27" Column="34" />
+      <File FileName="Bemyguide\Views\MainListViews.cs" Line="18" Column="17" />
+      <File FileName="Bemyguide\Views\SettingsView.cs" Line="41" Column="40" />
+      <File FileName="Bemyguide\Pages\MainPage.cs" Line="50" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
